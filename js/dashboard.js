@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Logout do usuário
     logoutButton.addEventListener("click", function () {
         localStorage.removeItem("token");
-        window.location.href = "login.html"; // Redireciona para login
+        window.location.href = "https://github.com/danykrakk/EcoTrack---PionAI/blob/main/index.html"; // Redireciona para login
     });
 
     // Carregar seção ao clicar no menu
@@ -30,6 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Verifica se o usuário está autenticado
     if (!localStorage.getItem("token")) {
-        window.location.href = "login.html";
+        window.location.href = "https://github.com/danykrakk/EcoTrack---PionAI/blob/main/index.html";
     }
 });
