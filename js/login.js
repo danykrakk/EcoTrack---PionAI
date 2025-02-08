@@ -23,7 +23,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
         if (response.ok) {
             alert("Login bem-sucedido!");
             localStorage.setItem("token", data.token);
-            window.location.href = "../paginas/dashboard.html"; // Redireciona para o dashboard
+            window.location.href = "https://github.com/danykrakk/EcoTrack---PionAI/blob/main/paginas/dashboard.html"; // Redireciona para o dashboard
         } else {
             alert("Erro: " + (data.message || "Falha no login."));
         }
