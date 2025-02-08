@@ -1,0 +1,163 @@
+/* Fonte bonita e fundo elegante */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../img/LazerTrilhaEcoUm.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.4); /* Fundo branco com mais transparência */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Título estilizado */
+h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Labels e campos de entrada */
+.form-label {
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+/* Efeito ao clicar nos campos */
+.form-control:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+/* Botão estilizado */
+.btn-primary {
+    width: 100%;
+    background: #28a745;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn-primary:hover {
+    background: #1e7e34;
+}
+
+/* Link de recuperação de senha (opcional) */
+.link {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #28a745;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Imagem da logo */
+.logo {
+    width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.senha-container {
+    position: relative;
+    width: 100%;
+}
+
+.senha-container i {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    cursor: pointer;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.ou {
+    text-align: center;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.social-login {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn.google {
+    background: #db4437;
+    color: white;
+}
+
+.btn.facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.btn.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+.register {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+
+

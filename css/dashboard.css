@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f5f1; /* Fundo suave */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #145a32; /* Verde escuro */
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background: #1e8449; /* Tom de verde mais claro no hover */
+}
+
+/* Ícones usando Unicode */
+.sidebar ul li a::before {
+    content: "➤"; /* Ícone genérico de seta */
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* Botão "Sair" */
+#logout {
+    background: #c0392b; /* Vermelho suave */
+    padding: 10px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+#logout:hover {
+    background: #a93226;
+}
+
+/* Conteúdo principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+h1 {
+    color: #145a32; /* Verde escuro */
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+.logo {
+    width: 150px; /* Ajuste conforme necessário */
+    display: block;
+    margin: 10px auto;
+}

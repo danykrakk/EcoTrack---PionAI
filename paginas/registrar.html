@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ações Sustentáveis</title>
+    <link rel="stylesheet" href="../css/cssRegistrar.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <!-- MENU LATERAL -->
+    <div class="sidebar">
+        <img src="../img/ecotrack.png" alt="EcoTrack" class="logo">
+        <ul>
+            <li><a href="../paginas/dashboard.html">Início</a></li>
+            <li><a href="../paginas/registrar.html">Ações</a></li>
+            <li><a href="../paginas/login.html" id="logout">Sair</a></li>
+        </ul>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="content">
+        <h2 class="text-center">Ações Sustentáveis</h2>
+
+        <!-- Botão para abrir o modal -->
+        <button class="btn" onclick="openModal()">Nova Ação +</button>
+
+        <!-- Tabela -->
+        <input type="text" id="search" placeholder="Pesquisar..." onkeyup="searchTable()">
+        <table id="actionsTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Título</th>
+                    <th onclick="sortTable(1)">Categoria</th>
+                    <th onclick="sortTable(2)">Pontos</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+        <!-- Paginação -->
+        <div id="pagination"></div>
+    </div>
+
+    <!-- Modal para cadastrar ações -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Nova Ação Sustentável</h3>
+            <form id="actionForm">
+                <label for="title">Título</label>
+                <input type="text" id="title" required>
+
+                <label for="category">Categoria</label>
+                <select id="category">
+                    <option value="Reciclagem">Reciclagem</option>
+                    <option value="Energia">Energia</option>
+                    <option value="Água">Água</option>
+                    <option value="Mobilidade">Mobilidade</option>
+                </select>
+
+                <label for="points">Pontos</label>
+                <input type="number" id="points" min="0" required>
+
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/funcoes.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    background-color: #f4f7f1; /* Tom ecológico suave */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container centralizado */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+h2 {
+    color: #2d6a4f; /* Verde escuro */
+    margin-bottom: 20px;
+}
+
+/* Botão principal */
+.btn {
+    background-color: #40916c; /* Verde forte */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #2d6a4f; /* Verde mais escuro no hover */
+}
+
+/* Campo de pesquisa */
+#search {
+    width: 60%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #2d6a4f;
+    border-radius: 5px;
+}
+
+/* Estilização da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Cabeçalho da tabela */
+th {
+    background-color: #52b788; /* Verde médio */
+    color: white;
+    cursor: pointer;
+}
+
+/* Linhas alternadas para melhorar a visualização */
+tbody tr:nth-child(even) {
+    background-color: #f0fdf4;
+}
+
+/* Efeito hover nas linhas */
+tbody tr:hover {
+    background-color: #b7e4c7;
+}
+
+/* Modal estilizado */
+/* Modal estilizado */
+/* Estilos do Modal */
+/* Estilos do Modal */
+/* Estilos do Modal */
+.modal {
+    display: none;  /* Mantém oculto até ser ativado */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilização do conteúdo do modal */
+.modal-content {
+    background: white;
+    width: 40%;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Classe para exibir o modal corretamente */
+.modal.show {
+    display: flex;
+}
+
+.modal.show .modal-content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Botão de fechar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #d90429;
+}
+
+/* Inputs e selects */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão dentro do modal */
+.modal-content button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #40916c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #2d6a4f;
+}
