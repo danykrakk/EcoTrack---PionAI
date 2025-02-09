@@ -10,7 +10,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     }
 
     try {
-        const response = await fetch("https://meu-backend.up.railway.app/login", {
+        const response = await fetch("https://ecotrack-api-pionai-2.onrender.com", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
