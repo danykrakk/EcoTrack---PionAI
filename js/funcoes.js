@@ -1,7 +1,7 @@
 let actions = [];
 let currentPage = 1;
 const itemsPerPage = 5;
-const apiUrl = "https://meu-backend.railway.app/api/acoes-sustentaveis"; // URL da API no Railway
+const apiUrl = "https://ecotrack-api-pionai-2.onrender.com"; // URL da API no Railway
 
 // Carrega ações do backend
 async function loadActions() {
