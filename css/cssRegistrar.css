@@ -86,10 +86,6 @@ tbody tr:hover {
 }
 
 /* Modal estilizado */
-/* Modal estilizado */
-/* Estilos do Modal */
-/* Estilos do Modal */
-/* Estilos do Modal */
 .modal {
     display: none;  /* Mantém oculto até ser ativado */
     position: fixed;
@@ -136,13 +132,20 @@ tbody tr:hover {
     color: #d90429;
 }
 
-/* Inputs e selects */
-input, select {
+/* Inputs, selects e textarea */
+input, select, textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Ajuste específico para textarea */
+textarea {
+    height: 80px;
+    resize: vertical;
 }
 
 /* Botão dentro do modal */
